@@ -4,9 +4,6 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
-body{
-    
-}
 a{
     text-decoration: none;
 }
@@ -15,6 +12,7 @@ a{
     min-height: 100vh;
     margin: auto;
 }
+/* header */
 .header{
     margin-top: 70px;
     margin-left: 120px;
@@ -25,7 +23,7 @@ a{
     color: #312e2e
 }
 .header .logo{
-    font-size: 30px;
+    font-size: 50px;
     font-weight: 700;
 }
 
@@ -33,7 +31,7 @@ a{
     display: flex;
     position: fixed;
     right: 95px;
-    top: 40px;
+    top: 55px;
     width: 140px;
     height: 45px;
     border: 1px solid rgba(167, 158, 245m, 0.1);
@@ -56,7 +54,7 @@ a{
     padding-left: 15px;
     font-size: 12px;
     border-radius: 20px;
-    font-family:"Calibri", sans-serif;
+    font-family: 'Dancing Script';
     letter-spacing: 3px;
 }
 .header .searcharea i{
@@ -65,26 +63,33 @@ a{
     left: 35px;
     top: 14px;
 }
+/* section 1 */
 .section1{
     position: relative;
-    height: 100%;
-    width: 100vh;
+    height: auto;
+    width: 100%;
     display: flex;
+    top: 80px;
+    margin-bottom: -100px;
+    justify-content: space-evenly;
+    align-items:center;
+    gap: 12.5rem;
+    padding: 60px 5%;
     font-size: 2rem;
-    transform: translate(15%,50%);
+    transform: none;
 }
 .section1 .theme_image img{
-    height: 300px;
+    height: 18.75rem;
     width: auto;
 }
 .section1 .theme_text_logo{
     position: relative;
-    font-family: "Roboto", sans-serif;
-    left: 260px;
+    font-family: Roboto, sans-serif;
+    left: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     text-shadow:2px 2px 10px rgba(0,0,0, 0.1);
     letter-spacing: 3px;
     color: #3d3d4a;
@@ -112,13 +117,13 @@ span{
     letter-spacing: 0.5px;
     font-size: 1rem;
     border: transparent !important;
-    transform: translate(-155px, 0px);
+    transform: none;
 }
 .theme_text_logo .details:hover{
     background-color: #7A72FF;
     transition: 0.6s;
 }
-
+/*contract Bar */
 .contract_bar{
     height: 260px;
     width: 60px;
@@ -133,10 +138,8 @@ span{
     background-color:#FFFFFF;
     box-shadow:2px 2px 30px rgba(0,0,0,0.2);
     border-radius: 20px;
-    z-index: 1;
-    
+    z-index: 1; 
 }
-
 .contract_bar i{
     color: rgba(39, 39, 39, 0.7);
     cursor: pointer;
@@ -157,7 +160,7 @@ span{
     color: #0e76a8;
     transition: 0.3s;
 }
-
+/* Section2 */
 .section2{
     width: 90%;
     display: flex;
@@ -239,7 +242,7 @@ h4{color: #4d4d4d70;}
     box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
     background-color: #ffffff;
 }
-
+/* About */
 .about{
     margin:150px;
     display: flex;
@@ -274,6 +277,7 @@ h4{color: #4d4d4d70;}
 .section2.showcase{
     margin: -240px auto;
 }
+/* Notification */
 .notification{
     display: flex;
     justify-content: center;
@@ -310,7 +314,7 @@ h4{color: #4d4d4d70;}
 .notification .email input{
     border: transparent;
 }
-
+/* footer s*/
 .footer{
     margin-top: 50px;                    /* push to bottom */
     background-color: #000 !important;
@@ -320,5 +324,219 @@ h4{color: #4d4d4d70;}
 .footer p{
     text-align: center;
     color: #f2f2f2;
+}
 
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1280px) {
+    .header .searcharea{
+        
+    }
+  
+  
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .header .searcharea{
+        width: 120px;
+        height: 40px;
+    }
+    .header .searcharea input{
+    width: 120px;
+    height: 40px;
+    }
+    .header .searcharea i{
+    top: 12px;
+    }
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .header .searcharea{
+        width: 100px;
+        height: 35px;
+        right: 80px;
+        }
+    .header .searcharea input{
+        width: 100px;
+        height: 35px;
+    }
+    .header .searcharea i{
+        top: 10px;
+    }
+    .header .logo{
+        font-size: 40px;
+        font-weight: 700;
+    }
+    .section1{
+        flex-direction: column; 
+        margin-bottom: -120px;
+        gap: 1rem;
+        font-size: 1rem;
+    }
+    .section1 .theme_image img{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+    }
+    .theme_text{
+        display: flex;
+    }
+   .section1 .theme_text_logo .theme_text .winter{
+        letter-spacing: 10px;
+        font-size: 50px;
+    }
+    .section1 .theme_text_logo .theme_text .collection{
+        font-size: 20px;
+    }
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .header .searcharea{
+        width: 100px;
+        height: 35px;
+        right: 60px;
+    }
+    .header .searcharea input{
+    width: 100px;
+    height: 35px;
+    }
+    .header .searcharea i{
+    top: 10px;
+    }
+    .header .logo{
+    font-size: 30px;
+    font-weight: 700;
+    }
+    .section1{
+        flex-direction: column; 
+        margin-bottom: -120px;
+        gap: 1rem;
+        font-size: 1rem;
+    }
+    .section1 .theme_image img{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        height: 360px;
+    }
+    .theme_text{
+        display: flex;
+    }
+   .section1 .theme_text_logo .theme_text .winter{
+        letter-spacing: 10px;
+        font-size: 40px;
+    }
+    .section1 .theme_text_logo .theme_text .collection{
+        font-size: 18px;
+    }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .header .searcharea{
+        width: 100px;
+        height: 35px;
+        right: 30px;
+    }
+    .header .searcharea input{
+    width: 100px;
+    height: 35px;
+    }
+    .header .searcharea i{
+    top: 10px;
+    }
+    .header .logo{
+        font-size: 30px;
+        margin-left: -50px;
+    }
+    .section1{
+        flex-direction: column; 
+        margin-bottom: -120px;
+        gap: 1rem;
+        font-size: 1rem;
+    }
+    .section1 .theme_image img{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        height: 340px;
+    }
+    .theme_text{
+        display: flex;
+    }
+   .section1 .theme_text_logo .theme_text .winter{
+        letter-spacing: 10px;
+        font-size: 40px;
+    }
+    .section1 .theme_text_logo .theme_text .collection{
+        font-size: 18px;
+    }
+}
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .header .searcharea{
+        width: 100px;
+        height: 35px;
+        right: 25px;
+    }
+    .header .searcharea input{
+    width: 100px;
+    height: 35px;
+    }
+    .header .searcharea i{
+    top: 10px;
+    }
+    .header .logo{
+    font-size: 20px;
+    margin-left:-50px;
+    }
+    .section1{
+        flex-direction: column; 
+        margin-bottom: -120px;
+        gap: 1rem;
+        font-size: 1rem;
+    }
+    .section1 .theme_image img{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+    }
+    .theme_text{
+        display: flex;
+    }
+   .section1 .theme_text_logo .theme_text .winter{
+        letter-spacing: 10px;
+        font-size: 40px;
+    }
+    .section1 .theme_text_logo .theme_text .collection{
+        font-size: 18px;
+    }
 }
