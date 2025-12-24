@@ -390,17 +390,17 @@ h4{color: #4d4d4d70;}
         display: inline-flex;
         justify-content: center;
         align-items: center;
-        height: 400px;
+        height: 600px;
     }
     .theme_text{
         display: flex;
     }
    .section1 .theme_text_logo .theme_text .winter{
-        letter-spacing: 10px;
-        font-size: 50px;
+        letter-spacing: 15px;
+        font-size: 80px;
     }
     .section1 .theme_text_logo .theme_text .collection{
-        font-size: 20px;
+        font-size: 35px;
     }
 }
 
@@ -448,6 +448,12 @@ h4{color: #4d4d4d70;}
     .section1 .theme_text_logo .theme_text .collection{
         font-size: 18px;
     }
+    .about img{
+        display: none;
+    }
+    .about .about_text{
+        width: 100%;
+    }
 }
 
 /* 
@@ -494,6 +500,12 @@ h4{color: #4d4d4d70;}
     .section1 .theme_text_logo .theme_text .collection{
         font-size: 18px;
     }
+    .about img{
+        display: none;
+    }
+    .about .about_text{
+        width: 100%;
+    }
 }
 /* 
   ##Device = Most of the Smartphones Mobiles (Portrait)
@@ -538,5 +550,12 @@ h4{color: #4d4d4d70;}
     }
     .section1 .theme_text_logo .theme_text .collection{
         font-size: 18px;
+    }
+   
+    .about img{
+        display: none;
+    }
+    .about .about_text{
+        width: 100%;
     }
 }
